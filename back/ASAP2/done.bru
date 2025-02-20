@@ -1,0 +1,18 @@
+meta {
+  name: done
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/emoji
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "symbol":"@",
+    "name":"at"
+  }
+}
